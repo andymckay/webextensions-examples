@@ -1,0 +1,7 @@
+{
+  "name": "python-example-addon",
+  "description": "this is a test",
+  "path": "YOUR-ABSOLUTE-PATH/runtime-example",
+  "type": "stdio",
+  "allowed_extensions": ["python-example@mozilla.org"]
+}

@@ -1,0 +1,16 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "python-example@mozilla.org",
+      "strict_min_version": "50.0"
+    }
+  },
+  "description": "An example connecting to a native application",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/python-example",
+  "manifest_version": 2,
+  "name": "Python Example",
+  "version": "1.0",
+  "permissions": [
+      "nativeMessaging"
+  ]
+}
