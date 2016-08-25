@@ -1,0 +1,5 @@
+language: node_js
+sudo: false
+before-install:
+    - npm install eslint
+script: eslint .
