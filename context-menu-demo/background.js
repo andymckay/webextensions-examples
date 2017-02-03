@@ -47,11 +47,15 @@ browser.contextMenus.create({
   contexts: ["all"]
 }, onCreated);
 
+// Tab is added as a context in Firefox 53. This checks that it can
+// be used before adding it in.
+let contexts = browser.contextMenus.ContextType.TAB ? ["all", "tab"] : ["all"];
+
 browser.contextMenus.create({
   id: "greenify",
   type: "radio",
   title: browser.i18n.getMessage("contextMenuItemGreenify"),
-  contexts: ["all"],
+  contexts: contexts,
   checked: true
 }, onCreated);
 
@@ -59,7 +63,7 @@ browser.contextMenus.create({
   id: "bluify",
   type: "radio",
   title: browser.i18n.getMessage("contextMenuItemBluify"),
-  contexts: ["all"],
+  contexts: contexts,
   checked: false
 }, onCreated);
 
