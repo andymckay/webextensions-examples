@@ -14,6 +14,8 @@ In detail, it adds a browser action. When the user clicks the browser action, th
 
 This is following essentially the process documented here: https://developers.google.com/identity/protocols/OAuth2UserAgent.
 
+Note: that the certificate for extensions.allizom.org might give you are a warning of an invalid certificate. That's unfortunate, but nothing to do with the API. Click Advanced > Add Exception if on the warning page.
+
 ## Setup ##
 
 There's some basic setup you must do before you can use this example.
